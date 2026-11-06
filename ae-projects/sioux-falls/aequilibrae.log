@@ -1,0 +1,9 @@
+2026-11-06 11:09:40,024;WARNING ; About table already exists. Nothing was done
+2026-11-06 11:09:40,384;INFO ; Updating layer statistics for links, this may take a moment
+2026-11-06 11:09:40,389;INFO ; Updated layer statistics for links
+2026-11-06 11:09:40,421;INFO ; Updating layer statistics for nodes, this may take a moment
+2026-11-06 11:09:40,426;INFO ; Updated layer statistics for nodes
+2026-11-06 11:09:40,504;INFO ; Network built successfully
+2026-11-06 11:09:40,533;WARNING ; Matrix Record has been saved to the database
+2026-11-06 11:10:21,317;WARNING ; Field(s) travel_time has(ve) at least one NaN value. Check your computations
+2026-11-06 11:10:21,336;WARNING ; Cost field with wrong type. Converting to float64

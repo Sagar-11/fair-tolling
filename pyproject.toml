@@ -1,0 +1,31 @@
+[project]
+name = "fair-tolling"
+version = "0.1.0"
+description = "An implementation of fair tolling algorithms"
+readme = "README.md"
+authors = [
+    { name = "Sagar Singh", email = "sagar.singh.goa@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "aequilibrae>=1.7.2",
+    "gurobipy>=13.0.3",
+]
+
+[project.scripts]
+fair-tolling = "fair_tolling:main"
+create-ae-projects = "fair_tolling.create_ae_projects:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
