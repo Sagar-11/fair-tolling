@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run fair-tolling",
+            "type": "shell",
+            "command": "uv run fair-tolling",
+            "options": { "cwd": "${workspaceFolder}" },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run all tests",
+            "type": "shell",
+            "command": "uv run pytest -v",
+            "options": { "cwd": "${workspaceFolder}" },
+            "group": { "kind": "test", "isDefault": true },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run tests in current file",
+            "type": "shell",
+            "command": "uv run pytest -v \"${file}\"",
+            "options": { "cwd": "${workspaceFolder}" },
+            "group": "test",
+            "problemMatcher": []
+        }
+    ]
+}

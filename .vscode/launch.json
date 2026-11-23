@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "args": "${input:scriptArgs}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+        },
+        {
+            "name": "Run fair-tolling",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "fair_tolling",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+        },
+        {
+            "name": "Pytest: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": ["-v", "${file}"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+        }
+    ],
+    "inputs": [
+        {
+            "id": "scriptArgs",
+            "type": "promptString",
+            "description": "Arguments to pass to the current Python file",
+            "default": ""
+        }
+    ]
+}

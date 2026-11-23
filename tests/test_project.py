@@ -32,3 +32,10 @@ def test_gurobi_license():
     assert result.returncode == 0 and "error" not in output.lower(), (
         f"Gurobi license check failed:\n{output}"
     )
+
+def test_ae_projects_exists():
+    ae_dir = PROJECT_ROOT / "ae-projects"
+    missing = [name for name in ("hearn-example", "nine-node", "sioux-falls") if not (ae_dir / name).is_dir()]
+    assert not missing, (
+        f"Missing AequilibraE projects in {ae_dir}: {', '.join(missing)}; run `uv run create-ae-projects`"
+    )

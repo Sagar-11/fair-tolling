@@ -1,3 +1,28 @@
-2026-11-06 10:45:37,603;WARNING ; About table already exists. Nothing was done
-2026-11-06 10:45:37,730;WARNING ; Matrix Record has been saved to the database
-2026-11-06 10:57:57,581;WARNING ; Field(s) speed, travel_time has(ve) at least one NaN value. Check your computations
+2026-11-17 09:33:39,829;WARNING ; About table already exists. Nothing was done
+2026-11-17 09:33:39,979;WARNING ; Matrix Record has been saved to the database
+2026-11-17 09:33:39,985;INFO ; Created project /Users/sagar/Documents/GitHub/fair-tolling/ae-projects/hearn-example from GMNS files in /Users/sagar/Documents/GitHub/fair-tolling/gmns-data/hearn_example
+2026-11-17 09:33:44,568;WARNING ; Field(s) name, speed, travel_time has(ve) at least one NaN value. Check your computations
+2026-11-17 09:33:48,292;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:33:48,451;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:33:48,661;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:33:54,398;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:33:54,430;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:33:54,466;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:34:11,172;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:34:11,205;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:34:11,222;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:34:11,268;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:34:11,321;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:34:11,368;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:34:11,415;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:34:11,463;WARNING ; ResultRecord has been saved to the database
+2026-11-17 09:34:11,515;WARNING ; ResultRecord has been saved to the database
+2026-11-22 11:38:53,700;WARNING ; ResultRecord has been saved to the database
+2026-11-22 11:38:53,736;WARNING ; ResultRecord has been saved to the database
+2026-11-22 11:38:53,759;WARNING ; ResultRecord has been saved to the database
+2026-11-22 11:38:53,814;WARNING ; ResultRecord has been saved to the database
+2026-11-22 11:38:53,868;WARNING ; ResultRecord has been saved to the database
+2026-11-22 11:38:53,923;WARNING ; ResultRecord has been saved to the database
+2026-11-22 11:38:53,978;WARNING ; ResultRecord has been saved to the database
+2026-11-22 11:38:54,035;WARNING ; ResultRecord has been saved to the database
+2026-11-22 11:38:54,090;WARNING ; ResultRecord has been saved to the database

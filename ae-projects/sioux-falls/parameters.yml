@@ -19,13 +19,10 @@ network:
         a_node: from_node_id
         b_node: to_node_id
         capacity: capacity
-        direction: directed
-        distance: length
+        direction: dir_flag
         geometry: geometry
-        lanes: lanes
         link_id: link_id
-        link_type: facility_type
-        modes: allowed_uses
+        link_type: link_type
         name: name
         speed: free_speed
       fields:
@@ -85,7 +82,7 @@ network:
         length:
           description: GMNS length in long_length units
           required: false
-          type: numeric
+          type: integer
         link_id:
           description: Primary key
           required: true
@@ -94,6 +91,10 @@ network:
           description: Name
           required: false
           type: text
+        obs_volume:
+          description: Observed volume
+          required: false
+          type: numeric
         parent_link_id:
           description: The parent of this link
           required: false
@@ -129,27 +130,40 @@ network:
         vdf_beta:
           description: BPR beta
           required: false
-          type: numeric
+          type: integer
         vdf_fftt:
           description: Free-flow travel time (min)
           required: false
-          type: numeric
+          type: integer
+        vdf_free_speed_mph:
+          description: Free speed (mph)
+          required: false
+          type: integer
+        vdf_length_mi:
+          description: Length (mi)
+          required: false
+          type: integer
         vdf_toll:
           description: Link toll
           required: false
           type: numeric
     node:
       equivalency:
+        is_centroid: zone_id
         node_id: node_id
       fields:
         ctrl_type:
           description: From GMNS ControlType_Set
           required: false
           type: text
+        district_id:
+          description: District id
+          required: false
+          type: numeric
         name:
           description: Node name
           required: false
-          type: text
+          type: numeric
         node_id:
           description: Unique key
           required: true

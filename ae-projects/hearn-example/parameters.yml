@@ -20,14 +20,7 @@ network:
         b_node: to_node_id
         capacity: capacity
         direction: directed
-        distance: length
-        geometry: geometry
-        lanes: lanes
         link_id: link_id
-        link_type: facility_type
-        modes: allowed_uses
-        name: name
-        speed: free_speed
       fields:
         allowed_uses:
           description: Set of allowed uses
@@ -118,8 +111,21 @@ network:
           description: Toll in currency units
           required: false
           type: numeric
+        vdf_alpha:
+          description: BPR alpha
+          required: false
+          type: numeric
+        vdf_beta:
+          description: BPR beta
+          required: false
+          type: numeric
+        vdf_fftt:
+          description: Free-flow travel time (min)
+          required: false
+          type: numeric
     node:
       equivalency:
+        is_centroid: zone_id
         node_id: node_id
       fields:
         ctrl_type:

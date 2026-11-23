@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "An implementation of fair tolling algorithms"
 readme = "README.md"
 authors = [
-    { name = "Sagar Singh", email = "sagar.singh.goa@gmail.com" }
+    { name = "Sagar Singh", email = "singhsagar@iitb.ac.in" }
 ]
 requires-python = ">=3.14"
 dependencies = [
@@ -29,3 +29,9 @@ dev = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+# AequilibraE is used from a local clone (v1.7.2) at ./aequilibrae-src, installed
+# in editable mode. On macOS, build it with Homebrew LLVM for OpenMP, e.g.
+#   CC=/opt/homebrew/opt/llvm/bin/clang CXX=/opt/homebrew/opt/llvm/bin/clang++ uv sync
+[tool.uv.sources]
+aequilibrae = { path = "aequilibrae-src", editable = true }

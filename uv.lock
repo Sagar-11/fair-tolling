@@ -9,8 +9,7 @@ resolution-markers = [
 
 [[package]]
 name = "aequilibrae"
-version = "1.7.2"
-source = { registry = "https://pypi.org/simple" }
+source = { editable = "aequilibrae-src" }
 dependencies = [
     { name = "geopandas" },
     { name = "numpy" },
@@ -25,12 +24,52 @@ dependencies = [
     { name = "shapely" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a2/98/06d540ea4d286f38872a634e0cc6d45c2458b371db4fc4b05626b29a7d4c/aequilibrae-1.7.2.tar.gz", hash = "sha256:5350f0f68e1a71ae98916ca856dfe6ecba5339f4b37eef48fe8e5780806f326d", size = 8799518, upload-time = "2026-10-20T00:54:18.385Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/76/18/37933af26f9515b868915a090255c9b63045601d9973dc81d99f60353ecb/aequilibrae-1.7.2-cp314-cp314-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:a06febab2fbadf05f975e854ee85cddc4e9bf2492f493e41c621f5e97a676881", size = 18254680, upload-time = "2026-10-20T00:54:10.261Z" },
-    { url = "https://files.pythonhosted.org/packages/9a/4f/a34ab5581115e0f51961aae3f607203ac96773d57f3935786e0f8b565a1c/aequilibrae-1.7.2-cp314-cp314-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:4f47010325fb82d1196417bf6efafb027287af6fe6e434786fdc939a117765d1", size = 18430875, upload-time = "2026-10-20T00:54:12.862Z" },
-    { url = "https://files.pythonhosted.org/packages/3b/bf/df1bb8c36c51ac0373405fd19eb0b3a5a51bfc55209360e86fcaa68215ea/aequilibrae-1.7.2-cp314-cp314-win_amd64.whl", hash = "sha256:a54508dbc55da41f84da10fd09b08e5502e746ea18d6972acdaa3634a6d612ae", size = 10136811, upload-time = "2026-10-20T00:54:15.98Z" },
+
+[package.metadata]
+requires-dist = [
+    { name = "aequilibrae", extras = ["build", "docs", "tests"], marker = "extra == 'dev'" },
+    { name = "codecov", marker = "extra == 'tests'" },
+    { name = "coveralls", marker = "extra == 'tests'" },
+    { name = "cython", marker = "extra == 'build'" },
+    { name = "enum34", marker = "extra == 'docs'" },
+    { name = "folium", marker = "extra == 'docs'" },
+    { name = "geopandas" },
+    { name = "mapclassify", marker = "extra == 'docs'" },
+    { name = "matplotlib", marker = "extra == 'docs'" },
+    { name = "nbconvert", marker = "extra == 'docs'" },
+    { name = "numpy", specifier = ">=2.4.6" },
+    { name = "openmatrix" },
+    { name = "pandas", specifier = ">=3.0" },
+    { name = "pyaml" },
+    { name = "pyarrow" },
+    { name = "pydata-sphinx-theme", marker = "extra == 'docs'" },
+    { name = "pyproj" },
+    { name = "pytest", marker = "extra == 'tests'" },
+    { name = "pytest-benchmark", marker = "extra == 'tests'" },
+    { name = "pytest-cov", marker = "extra == 'tests'" },
+    { name = "pytest-random-order", marker = "extra == 'tests'" },
+    { name = "pytest-subtests", marker = "extra == 'tests'" },
+    { name = "pytest-xdist", marker = "extra == 'tests'" },
+    { name = "requests" },
+    { name = "rtree" },
+    { name = "ruff", marker = "extra == 'tests'", specifier = "==0.14.8" },
+    { name = "scipy", specifier = ">=1.4" },
+    { name = "seaborn", marker = "extra == 'tests'" },
+    { name = "setuptools", marker = "extra == 'build'" },
+    { name = "setuptools", marker = "extra == 'tests'" },
+    { name = "shapely", specifier = ">=2.0" },
+    { name = "sphinx", marker = "extra == 'docs'" },
+    { name = "sphinx-autodoc-annotation", marker = "extra == 'docs'" },
+    { name = "sphinx-copybutton", marker = "extra == 'docs'" },
+    { name = "sphinx-design", marker = "extra == 'docs'" },
+    { name = "sphinx-gallery", marker = "extra == 'docs'" },
+    { name = "sphinx-git", marker = "extra == 'docs'" },
+    { name = "sphinx-subfigure", marker = "extra == 'docs'" },
+    { name = "tqdm" },
+    { name = "wheel", marker = "extra == 'build'" },
+    { name = "wheel", marker = "extra == 'tests'" },
 ]
+provides-extras = ["docs", "tests", "build", "dev"]
 
 [[package]]
 name = "appnope"
@@ -340,7 +379,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "aequilibrae", specifier = ">=1.7.2" },
+    { name = "aequilibrae", editable = "aequilibrae-src" },
     { name = "gurobipy", specifier = ">=13.0.3" },
 ]
 

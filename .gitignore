@@ -8,5 +8,10 @@ wheels/
 
 # Virtual environments
 .venv
-.vscode
 gurobi.log
+# Local AequilibraE clone (own git repo)
+aequilibrae-src/
+.claude/
+.pytest_cache/
+.DS_Store
+ae-projects/*/aequilibrae.log
